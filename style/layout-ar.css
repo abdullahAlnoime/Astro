@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "arabic";
+  src: url("../font/arabic.ttf");
+}
+
+* {
+  font-family: "arabic";
+}
+header>.container:first-of-type .call img , header>.container.container:first-of-type .message img {
+  margin-left: 5px ;
+}
+
+header>.container:first-of-type .lang {
+  margin-left: 0 ;
+  margin-right: auto ;
+}
+
+header>.container:first-of-type .lang select {
+  margin-right: 3px;
+}
+
+header nav .container {
+  justify-content: space-between ;
+}
+
+header nav .container>img {
+  order: 3 ;
+}
+
+header nav .container .bullets {
+  order: 2 ;
+  width: fit-content ;
+}
+
+header nav .container .bullets span:not(:first-of-type) {
+  margin-left: 0 ;
+  margin-right: 20px ;
+}
+
+header nav .container .search {
+  order: 1 ;
+  margin: 0 ;
+}
+
+header nav .container .search input {
+  padding: 8px 5px 8px 20px;
+}
+
+header nav .container .search img {
+  right: auto ;
+  left: 5px;
+}
+
+header>img:first-of-type {
+  width: 50%;
+  bottom: 3px ;
+  margin-right: 50% ;
+}
+
+footer .container > div:nth-of-type(3) button {
+  margin-left: 0 ;
+  margin-right: auto ;
+}
+footer {
+  height: 340px ;
+}
+footer .container > div ul {
+  padding: 0 ;
+  padding-right: 20px ;
+}
+
+@media (max-width: 375px) {
+  header nav {
+    direction: ltr ;
+  }
+  header nav .container .bullets {
+    width: 90% !important ;
+    right: 5% ;
+  }
+  header nav .container .bullets .search input {
+    padding: 15px 15px 15px 26px ;
+  }
+  header nav .container .bullets .search img {
+    right: initial ;
+    left: 1.5px ;
+  }
+  header > img:first-of-type {
+    width: 90% !important ;
+    margin-left: auto ;
+    margin-right: 5% ;
+    margin-bottom: -5px ;
+  }
+  footer {
+    height: auto ;
+  }
+}

@@ -1,0 +1,17 @@
+.fast ul {
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.fast ul li:before {
+  left: initial;
+  right: -5px;
+  transform: translate(100%, -45%);
+}
+
+@media (max-width: 375px) {
+  .team > div .team-body p {
+    margin-bottom: 14px ;
+  }
+}

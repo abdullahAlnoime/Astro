@@ -1,0 +1,74 @@
+
+header>.container:last-of-type .intro {
+  text-align: right ;
+}
+
+header>.container:last-of-type .intro ul li:before {
+  right: -5px;
+  transform: translate(100%,-45%);
+}
+
+header>.container:last-of-type .hero img {
+  bottom: -95px;
+  left: 80px ;
+}
+
+.domain>div:nth-of-type(2) input {
+  border-radius: 0 4px 4px 0 ;
+}
+
+.domain>div:nth-of-type(2) select {
+  height: 35px ;
+  border-radius: 4px 0 0 4px;
+}
+
+.domain>div:nth-of-type(2) button {
+  margin-left: 0 ;
+  margin-right: auto ;
+}
+
+.domain>div:last-of-type>div:first-of-type:after {
+  content: "الأساسي ٩.٩٩$ كل شهر";
+  letter-spacing: 1px;
+}
+
+.domain>div:last-of-type>div:nth-of-type(2):after {
+  content: "الإحترافي ١٩.٩٩$ كل شهر";
+  letter-spacing: 1px;
+}
+
+.domain>div:last-of-type>div:nth-of-type(3):after {
+  content: "الممتاز ٢٩.٩٩$ كل شهر";
+  letter-spacing: 1.5px;
+}
+
+.domain>div:last-of-type>div:last-of-type:after {
+  content: "الفائق ٤٩.٩٩$ كل شهر";
+  letter-spacing: 1px;
+}
+
+.domain>div:last-of-type>div .plan-head {
+  margin-left: 0 ;
+  margin-right: -8px;
+}
+
+.domain>div:last-of-type>div .plan-head img:first-of-type {
+  margin-left: 0 ;
+  margin-right: 30% ;
+}
+
+.domain>div:last-of-type>div .plan-body ul li:before {
+  left: auto ;
+  right: -5px;
+  transform: translate(100%, -45%);
+}
+header > img:first-of-type {
+  
+}
+
+@media (max-width: 375px) {
+  .sp-price {
+    width: fit-content !important;
+    margin: 10px auto;
+  }
+}

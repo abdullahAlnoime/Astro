@@ -1,0 +1,260 @@
+hr {
+  border-bottom-color: #1e8e3e;
+}
+h3 span ,
+h2 span {
+  color: #1e8e3e ;
+}
+header>.container:last-of-type .intro h2 span {
+  color: #1e8e3e;
+}
+
+header {
+  background-color: #e6f4ea;
+}
+
+header nav .container .bullets span a.active {
+  border-top-color: #1e8e3e;
+  color: #1e8e3e ;
+}
+
+hr:before {
+  background-color: #1e8e3e;
+}
+
+footer {
+  background-color: #e6f4ea;
+}
+
+footer .container>div:nth-of-type(3) button {
+  background-color: #1e8e3e;
+}
+
+.fast ul {
+  list-style: none;
+  margin: 10px;
+  margin-left: 25px ;
+  padding: 0;
+}
+
+.fast ul li {
+  position: relative;
+  margin: 5px 0;
+}
+
+.fast ul li:before {
+  content: "";
+  background-image: url("../../images/icons/correct.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 48%;
+  left: -5px;
+  transform: translate(-100%, -45%);
+}
+.fast {
+  display: flex ;
+  justify-content: space-evenly ;
+  align-items: center ;
+}
+
+.fast img {
+  width: 25% ;
+}
+
+.fast div {
+  width: 55% ;
+  padding: 10px ;
+  background-color: #e6f4ea ;
+  border-radius: 6px ;
+}
+
+.what-do {
+  display: flex ;
+  flex-wrap: wrap ;
+  justify-content: space-between ;
+}
+.what-do h2 {
+  width: 75% ;
+  margin: 40px auto 10px ;
+  text-align: center ;
+}
+.what-do hr {
+  width: 55% ;
+  margin: 10px auto 40px ;
+}
+.what-do > div {
+  width: 46% ;
+  padding: 10px ;
+  display: flex ;
+  align-items: flex-start ;
+  justify-content: space-around ;
+}
+.what-do > div img {
+  width: 12% ;
+}
+.what-do > div div {
+  width: 75% ;
+}
+.what-do > div div h3 {
+  margin: 0 0 5px ;
+}
+.what-do>div div p {
+  margin: 5px 0 ;
+  color: #A1A1A1 ;
+}
+.team {
+  display: flex ;
+  justify-content: space-between ;
+  flex-wrap: wrap ;
+}
+.team h2 {
+  width: 75% ;
+  text-align: center ;
+  margin: 40px auto 10px ;
+}
+.team hr {
+  width: 80% ;
+  margin: 10px auto 40px ;
+}
+.team > div {
+  width: 24% ;
+  border: 1px solid #1e8e3e ;
+  border-radius: 4px ;
+  position: relative ;
+}
+.team > div:after {
+  content: attr(data-number);
+  display: block ;
+  text-align: center ;
+  line-height: 22px ;
+  width: 20px ;
+  height: 20px ;
+  background-color: #1e8e3e ;
+  border-radius: 50% ;
+  border: 3px solid #fff ;
+  color: #fff ;
+  position: absolute ;
+  bottom: -13px ;
+  left: 50% ;
+  transform: translateX(-50%) ;
+}
+.team > div .team-head {
+  height: 140px ;
+  background-color: #e6f4ea ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative ;
+}
+.team > div:first-of-type .team-head {
+  background-image: url("../../images/james.png") ;
+}
+.team > div:nth-of-type(2) .team-head {
+  background-image: url("../../images/emma.png");
+}
+.team > div:nth-of-type(3) .team-head {
+  background-image: url("../../images/mateo.png");
+  background-position-y: 25% ;
+}
+.team > div:last-of-type .team-head {
+  background-image: url("../../images/charlotte.png");
+  background-position-y: 75% ;
+}
+.team > div .team-head img {
+  position: absolute ;
+  bottom: -2px ;
+  width: 100% ;
+}
+.team > div .team-body {
+  padding: 10px ;
+}
+.team > div .team-body h4 {
+  padding-bottom: 15px ;
+  text-align: center ;
+  border-bottom: 2px dotted #1e8e3e ;
+}
+.team > div .team-body p {
+  margin-bottom: 0 ;
+  margin-top: 15px ;
+}
+.team > p {
+  width: 60% ;
+  text-align: center ;
+  color: #999 ;
+  margin: 40px auto 30px ;
+}
+.company {
+  display: flex ;
+  justify-content: space-between ;
+  flex-wrap: wrap ;
+  align-items: flex-start ;
+}
+.company > h2 {
+  width: 75% ;
+  text-align: center ;
+  margin: 10px auto ;
+}
+.company hr {
+  width: 55% ;
+  margin: 10px auto 40px ;
+}
+.company img {
+  width: 48% ;
+  border-radius: 6px ;
+  height: 239px ;
+}
+.company div {
+  width: 50% ;
+  height: 239px ;
+  padding: 10px 15px ;
+  border-radius: 6px ;
+  background-color: #e6f4ea ;
+}
+.company div p {
+  line-height: 1.8 ;
+}
+.company div h2 span {
+  font-size: 18px ;
+  text-transform: uppercase ;
+}
+@media (max-width: 375px) {
+  header nav .container .bullets span a.active {
+    border-bottom-color: #1e8e3e;
+  }
+  .fast {
+    flex-wrap: wrap ;
+  }
+  .fast div {
+    width: 90% ;
+    margin-top: 20px ;
+  }
+  .fast > img {
+    width: 40% ;
+  }
+  .what-do > div {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .team > div {
+    width: 80% ;
+    margin: 15px auto ;
+  }
+  .team > div .team-head {
+    height: 250px ;
+  }
+  .team > p {
+    width: 90% ;
+  }
+  .company img ,
+  .company div {
+    width: 90% ;
+    margin: 15px auto ;
+  }
+  .company div {
+    height: auto ;
+  }
+}

@@ -1,0 +1,473 @@
+header {
+  background-image: url(../../images/world.png);
+  background-size: 100% ;
+  background-repeat: no-repeat ;
+  background-position: center -100% ;
+  height: 500px ;
+}
+header .container:last-of-type {
+  display: flex ;
+  justify-content: space-between ;
+}
+header>.container:last-of-type .intro {
+  width: 46%;
+  margin: 20px 0 60px;
+  padding: 6px 10px ;
+  text-align: left ;
+  background-color: #FFFFFF99;
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+}
+
+header>.container:last-of-type .intro h1 span {
+  font-size: 25px;
+  color: #1a73e8;
+}
+
+header>.container:last-of-type .intro h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header>.container:last-of-type .hero {
+  width: 50%;
+}
+
+header>.container:last-of-type .intro ul {
+  list-style: none;
+  margin: 25px;
+  padding: 0;
+}
+
+header>.container:last-of-type .intro ul li {
+  position: relative;
+  margin: 10px 0;
+}
+
+header > .container:last-of-type .intro ul li:before {
+  content: "";
+  background-image: url("../../images/icons/correct.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 48%;
+  left: -5px;
+  transform: translate(-100%, -45%);
+}
+
+header>.container:last-of-type .hero {
+  height: 276px;
+  position: relative;
+}
+
+header>.container:last-of-type .hero img {
+  position: absolute;
+  bottom: -70px;
+  right: 80px;
+  z-index: 15;
+}
+
+.we-have {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.we-have div:first-of-type,
+.domain>div:first-of-type {
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.we-have div:first-of-type h2 span,
+.domain>div:first-of-type h2 span,
+.contact h2 span {
+  color: #1a73e8;
+  font-size: 20px;
+}
+
+.we-have div:not(:first-of-type) {
+  width: 30%;
+  text-align: center;
+}
+
+.we-have div:not(:first-of-type) img {
+  width: 30%;
+}
+
+.we-have div:not(:first-of-type) h3 span {
+  color: #1a73e8;
+  font-size: 18px;
+}
+
+.domain>div:nth-of-type(2) {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #e8f0fe;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.domain>div:nth-of-type(2) input {
+  padding: 8px 5px;
+  width: 63%;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #1a73e8;
+}
+
+.domain>div:nth-of-type(2) input:focus {
+  outline: none;
+}
+
+.domain>div:nth-of-type(2) select {
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 5px;
+  border: 1px solid #1a73e8;
+  height: 32px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+}
+
+.domain>div:nth-of-type(2) select:focus {
+  outline: none;
+}
+
+.domain>div:nth-of-type(2) button {
+  margin-left: auto;
+  padding: 8px;
+  border: none;
+  background-color: #1a73e8;
+  height: 33px;
+  border-radius: 4px;
+  color: white;
+  z-index: 44;
+  position: relative;
+}
+
+.domain>div:nth-of-type(2) button:before {
+  content: "";
+  width: 100%;
+  transition: 0.2s;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.domain>div:last-of-type {
+  display: flex;
+  margin: 80px auto;
+  justify-content: space-between;
+}
+
+.domain>div:last-of-type>div {
+  width: 24%;
+  border-radius: 4px;
+  border: 1px solid #1a73e8;
+  padding: 8px;
+  position: relative;
+}
+
+.domain>div:last-of-type>div:after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #1a73e8;
+  color: white;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.domain>div:last-of-type>div:first-of-type:after {
+  content: "BASIC $9.99 per month";
+  letter-spacing: 1px;
+}
+
+.domain>div:last-of-type>div:nth-of-type(2):after {
+  content: "P R O $19.99 per month";
+}
+
+.domain>div:last-of-type>div:nth-of-type(3):after {
+  content: "PREM $29.99 per month";
+
+}
+
+.domain>div:last-of-type>div:last-of-type:after {
+  content: "ULTRA $49.99 per month";
+}
+
+.domain>div:last-of-type>div .plan-head {
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  margin-top: -8px;
+  height: 120px;
+  border-radius: 4px 4px 0 0;
+  background-color: #e8f0fe;
+  background-image: url("../../images/world.png");
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.domain>div:last-of-type>div .plan-head img:first-of-type {
+  width: 40%;
+  margin-left: 30%;
+  position: absolute;
+  bottom: 0;
+  z-index: 15;
+}
+
+.domain>div:last-of-type>div .plan-head img:last-of-type {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 20;
+}
+
+.domain>div:last-of-type>div .plan-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.domain>div:last-of-type>div .plan-body ul {
+  list-style: none;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.domain>div:last-of-type>div .plan-body ul li {
+  position: relative;
+  margin: 10px 0;
+}
+
+.domain>div:last-of-type>div .plan-body ul li:before {
+  content: "";
+  background-image: url("../../images/icons/correct.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 48%;
+  left: -5px;
+  transform: translate(-100%, -45%);
+}
+
+.domain>div:last-of-type>div .plan-body button,
+.contact button {
+  padding: 8px;
+  border: none;
+  background-color: #1a73e8;
+  height: 33px;
+  border-radius: 4px;
+  color: white;
+  z-index: 44;
+  position: relative;
+}
+
+.domain>div:last-of-type>div .plan-body button:before,
+.contact button:before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sp-price table,
+.sp-domain table {
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.sp-domain table {
+  width: 75%;
+  margin: 30px auto;
+}
+
+.sp-domain table tbody td,
+.sp-price table tbody td {
+  position: relative;
+}
+
+.sp-domain table tbody td img,
+.sp-price table tbody td img {
+  width: 37px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sp-price table th,
+.sp-domain table th {
+  padding: 10px;
+  color: #1a73e8;
+}
+
+.sp-price table td,
+.sp-domain table td {
+  padding: 8px;
+}
+
+.sp-price table td,
+.sp-price table th,
+.sp-domain table td,
+.sp-domain table th {
+  border: 1px solid #1a73e8;
+}
+
+.sp-price table:last-of-type {
+  display: none;
+}
+
+.contact {
+  width: 60%;
+  text-align: center;
+  margin: 40px auto;
+}
+
+
+.domain button:hover:before {
+  transform: translateY(-100%);
+  border-radius: 4px 4px 0 0 !important;
+}
+
+.contact button:hover:before {
+  transform: translateY(-100%);
+  border-radius: 4px 4px 0 0 !important;
+}
+
+@media (max-width: 375px) {
+
+  .container,
+  section {
+    width: 100%;
+  }
+  header {
+    height: auto ;
+    background-image: url(../../images/world.png);
+    background-size: 300% ;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header>.container:last-of-type {
+    flex-direction: column;
+  }
+
+  header>.container:last-of-type .intro {
+    width: 100%;
+  }
+
+  header>.container:last-of-type .hero {
+    width: 100%;
+    margin-bottom: -33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header>.container:last-of-type .hero img {
+    position: static;
+    width: 75%;
+  }
+
+  .we-have>div,
+  .domain>div {
+    width: calc(100% - 20px) !important;
+    margin: 10px auto;
+  }
+
+  .we-have>div:not(:first-of-type) {
+    width: 70% !important;
+  }
+
+  .we-have>div:not(:first-of-type) img {
+    width: 25% !important;
+  }
+
+  .domain>div:nth-of-type(2) {
+    flex-wrap: wrap;
+  }
+
+  .domain>div:nth-of-type(2) input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .domain>div:nth-of-type(2) select {
+    width: 20%;
+    margin-bottom: 10px;
+  }
+
+  .domain>div:nth-of-type(2) button {
+    width: 100%;
+  }
+
+  .domain .for-mobile {
+    flex-wrap: wrap;
+  }
+
+  .domain .for-mobile>div {
+    width: 80% !important;
+    background-position: center 50% !important;
+    margin: 25px auto;
+  }
+
+  .domain .for-mobile>div .plan-head img:first-of-type {
+    width: 25% !important;
+    margin: 0 37.5% !important;
+  }
+
+  .domain .for-mobile>div .plan-body button {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .sp-price {
+    width: calc(100% - 20px) !important;
+    margin: 10px auto;
+  }
+
+  .sp-price table:first-of-type {
+    display: none;
+  }
+
+  .sp-price table:last-of-type {
+    display: block;
+  }
+
+  .contact {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  hr {
+    width: 80% !important;
+  }
+}

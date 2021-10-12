@@ -1,0 +1,162 @@
+.container .blog section>img {
+  margin-left: 0;
+  margin-right: -15px;
+}
+
+.container .blog section>div div img:last-of-type {
+  margin-left: 4px;
+  margin-right: auto;
+}
+
+.container .blog section>div div img {
+  position: relative;
+  top: 1px;
+}
+
+.container .blog section button {
+  line-height: 13px;
+}
+
+.container aside section:first-of-type input {
+  padding: 8px 5px 8px 20px;
+}
+
+.container aside section:first-of-type img {
+  right: auto;
+  left: 2.5px;
+}
+
+.container aside section h5:after {
+  width: 45%;
+  right: auto;
+  left: 0;
+}
+
+.container aside section:nth-of-type(2) h5:after {
+  width: 60%;
+}
+
+.container aside section:last-of-type h5:after {
+  width: 68%;
+}
+
+.sp-blog>span:after {
+  left: initial;
+  right: 0;
+  transform: rotate(0deg);
+}
+
+.sp-blog>span:before {
+  right: initial;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.sp-comment h2:after,
+.leave-comment h2:after {
+  width: 85%;
+  right: initial;
+  left: 0;
+}
+
+.leave-comment h2:after {
+  width: 84%;
+}
+
+.comments .person>div .comment-head span:last-of-type {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+@media (max-width: 375px) {
+
+  .blog section>div div ,
+  .comments .person>div .comment-head {
+    justify-content: flex-start ;
+    align-items: center;
+  }
+  .comments .person > div .comment-head img {
+    width: 16px ;
+  }
+  .comments .person>div .comment-head {
+    margin-bottom: 5px ;
+  }
+  .comments .person > div .comment-head span ,
+  .blog section > div div span {
+    font-size: 14px ;
+  }
+  .blog section>div div img:last-of-type ,
+  .comments .person>div .comment-head span:last-of-type {
+    margin-right: auto !important ;
+  }
+  .blog section>div div img {
+    margin: 0 4px !important;
+  }
+
+  .comments .person>div .comment-body {
+    word-break: normal ;
+    padding-right: 60px ;
+    padding-left: 10px ;
+  }
+
+  .comments .person>div .comment-body img {
+    right: 1px ;
+    left: initial ;
+  }
+  .leave-comment > div form div:first-of-type {
+    flex-wrap: wrap ;
+  }
+  .leave-comment>div form div:first-of-type label ,
+  .leave-comment>div form div:first-of-type input {
+    width: 100% ;
+  }
+  .leave-comment>div form div:last-of-type label {
+    margin-right: inherit;
+    margin-left: auto;
+  }
+  .sp-comment h2:after,
+  .leave-comment h2:after {
+    width: 81%;
+  }
+  
+  .leave-comment h2:after {
+    width: 80%;
+  }
+
+  .show-search {
+    right: auto ;
+    left: 0 ;
+    border-radius: 0 30px 30px 0 ;
+  }
+
+  aside {
+    border-radius: 0 4px 4px 0 ;
+    border-width: 1px ;
+    border-right-width: 4px;
+    right: auto ;
+    left: 0 ;
+  }
+
+  aside.searchBar {
+    width: 50% !important;
+    opacity: 1;
+  }
+
+  .show-search.buttonSearch {
+    right: auto ;
+    left: 180px ;
+  }
+
+  .container aside section h5:after {
+    width: 53%;
+  }
+
+  .container aside section:nth-of-type(2) h5:after {
+    width: 65%;
+  }
+
+  .container aside section:last-of-type h5:after {
+    width: 73%;
+  }
+
+}

@@ -1,0 +1,31 @@
+
+.fast ul ,
+.modern ul ,
+.safe ul {
+  margin-left: 10px ;
+  margin-right: 25px ;
+}
+
+.fast ul li:before ,
+.modern ul li:before ,
+.safe ul li:before {
+  left: auto ;
+  right: -5px ;
+  transform: translate(100%, -45%);
+}
+
+.modern div .sp {
+  top: -5px ;
+  right: auto ;
+  left: -60% ;
+}
+
+@media (max-width: 375px) {
+  .modern div .sp {
+    top: -75% ;
+    right: 25% ;
+  }
+  .modern div .sp li {
+    margin: 0 !important ;
+  }
+}
